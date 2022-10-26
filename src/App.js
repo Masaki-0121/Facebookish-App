@@ -4,13 +4,15 @@ import Sidebar from "./components/Sidebar";
 import "./App.css";
 import { Box } from "@mui/material";
 import { Stack } from "@mui/system";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Box>
       {/* Navbar */}
-      <Stack>
-        <Sidebar direction="row" spacing={2} justifyContent="space-between" />
+      <Navbar />
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+        <Sidebar />
         <Feed />
         <Rightbar />
       </Stack>
