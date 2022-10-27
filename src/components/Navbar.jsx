@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AppBar,
   Avatar,
   Badge,
   Box,
   InputBase,
+  Menu,
+  MenuItem,
   styled,
   Toolbar,
   Typography,
 } from "@mui/material";
-import { borderRadius } from "@mui/system";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { Mail, Notifications } from "@mui/icons-material";
 import Person1 from "../assets/person2.jpg";
@@ -26,11 +27,11 @@ const Search = styled("div")(({ theme }) => ({
   width: "40%",
 }));
 
+// up means if it is bigger than sm it is gonna trigger
 const Icons = styled(Box)(({ theme }) => ({
   display: "none",
   alignItems: "center",
   gap: "20px",
-  // up means if it is bigger than sm it is gonna trigger
   [theme.breakpoints.up("sm")]: {
     display: "flex",
   },
@@ -45,12 +46,13 @@ const UserBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-function Navbar() {
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <AppBar position="sticky">
       <StyledToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          Facebookish
+          FaceApp
         </Typography>
         <FacebookIcon sx={{ display: { xs: "block", sm: "none" } }} />
         <Search>
@@ -63,15 +65,37 @@ function Navbar() {
           <Badge badgeContent={2} color="error">
             <Notifications />
           </Badge>
-          <Avatar sx={{ width: 30, height: 30 }} src={Person1} />
+          <Avatar
+            sx={{ width: 30, height: 30 }}
+            src={Person1}
+            onClick={(e) => setOpen(true)}
+          />
         </Icons>
-        <UserBox>
+        <UserBox onClick={(e) => setOpen(true)}>
           <Avatar sx={{ width: 30, height: 30 }} src={Person1} />
           <Typography variant="span">Mia</Typography>
         </UserBox>
       </StyledToolbar>
+      <Menu
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
+        open={open}
+        onClose={(e) => setOpen(false)}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "right",
+        }}
+      >
+        <MenuItem>Profile</MenuItem>
+        <MenuItem>My account</MenuItem>
+        <MenuItem>Logout</MenuItem>
+      </Menu>
     </AppBar>
   );
-}
+};
 
 export default Navbar;
