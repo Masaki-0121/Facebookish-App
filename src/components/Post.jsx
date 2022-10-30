@@ -16,7 +16,7 @@ import React from "react";
 function Post() {
   return (
     <div>
-      <Card sx={{ margin: "5" }}>
+      <Card sx={{ margin: 5 }}>
         <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
