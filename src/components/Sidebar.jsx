@@ -25,7 +25,7 @@ function Sidebar({ mode, setMode }) {
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">
         <List>
-          <ListItem disablePadding>
+          <ListItem disablePadding sx={{ py: 1 }}>
             <ListItemButton>
               <ListItemIcon>
                 <Home />
@@ -33,7 +33,7 @@ function Sidebar({ mode, setMode }) {
               <ListItemText primary="Homepage" />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding sx={{ py: 1 }}>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
                 <Article />
@@ -41,7 +41,7 @@ function Sidebar({ mode, setMode }) {
               <ListItemText primary="Pages" />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding sx={{ py: 1 }}>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
                 <Group />
@@ -49,7 +49,7 @@ function Sidebar({ mode, setMode }) {
               <ListItemText primary="Groups" />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding sx={{ py: 1 }}>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
                 <Storefront />
@@ -57,7 +57,7 @@ function Sidebar({ mode, setMode }) {
               <ListItemText primary="Marketplace" />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding sx={{ py: 1 }}>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
                 <Person />
@@ -65,7 +65,7 @@ function Sidebar({ mode, setMode }) {
               <ListItemText primary="Friends" />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding sx={{ py: 1 }}>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
                 <Settings />
@@ -73,7 +73,7 @@ function Sidebar({ mode, setMode }) {
               <ListItemText primary="Settings" />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding sx={{ py: 1 }}>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
                 <AccountBox />
@@ -81,7 +81,7 @@ function Sidebar({ mode, setMode }) {
               <ListItemText primary="Profile" />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding sx={{ py: 1 }}>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
                 <ModeNight />

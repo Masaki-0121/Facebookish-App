@@ -12,6 +12,7 @@ import {
   Typography,
 } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import SearchIcon from "@mui/icons-material/Search";
 import { Mail, Notifications } from "@mui/icons-material";
 import Person1 from "../assets/person2.jpg";
 
@@ -51,12 +52,29 @@ const Navbar = () => {
   return (
     <AppBar position="sticky">
       <StyledToolbar>
-        <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          FaceApp
+        <Typography
+          variant="h6"
+          sx={{
+            display: { xs: "none", sm: "block" },
+            fontWeight: "bold",
+            fontSize: "1.5rem",
+          }}
+        >
+          faceapp
         </Typography>
         <FacebookIcon sx={{ display: { xs: "block", sm: "none" } }} />
-        <Search>
-          <InputBase placeholder="search..." />
+        <Search
+          sx={{
+            bgcolor: "#e6e8ea",
+            height: "30px",
+          }}
+        >
+          <InputBase
+            placeholder="Search FaceApp user..."
+            startAdornment={
+              <SearchIcon sx={{ color: "gray", position: "start" }} />
+            }
+          />
         </Search>
         <Icons>
           <Badge badgeContent={4} color="error">

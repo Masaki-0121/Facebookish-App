@@ -47,7 +47,7 @@ const useStyles = styled({
   },
 });
 
-function StoryTest() {
+function StoryContents() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -61,7 +61,7 @@ function StoryTest() {
         display: "flex",
         justifyContent: "center ",
         flexDirection: "column",
-        width: "100%",
+        width: "90%",
       }}
     >
       <Box
@@ -156,4 +156,4 @@ function StoryTest() {
   );
 }
 
-export default StoryTest;
+export default StoryContents;
