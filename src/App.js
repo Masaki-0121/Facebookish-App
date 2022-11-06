@@ -7,7 +7,6 @@ import { Box, createTheme, ThemeProvider } from "@mui/material";
 import { Stack } from "@mui/system";
 import Navbar from "./components/Navbar";
 import { useState } from "react";
-import { dark, light } from "@mui/material/styles/createPalette";
 
 function App() {
   const [mode, setMode] = useState("light");

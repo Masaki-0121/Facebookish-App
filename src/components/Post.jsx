@@ -33,12 +33,12 @@ const callouts = [
   },
   {
     id: 3,
-    title: "Breakfast at Le Negresco",
+    title: "The view of Nice!",
     time: new Date().toLocaleString(),
     imageAvatar: require("../assets/friend2.jpg"),
     feedImage: require("../assets/post5.jpg"),
     description:
-      "I had wonderful morning at Hotel Le Negresco. They have the best service I've ever had and the pancake was awesome! ",
+      "You can see the entire view of Nice from castle hill. This was my most favorite view when I was living there!",
   },
 ];
 
