@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Facebookish-App/static/css/main.31d6cfe0.css",
+    "main.js": "/Facebookish-App/static/js/main.f698ed19.js",
+    "static/media/post5.jpg": "/Facebookish-App/static/media/post5.031fc4229f4956145a29.jpg",
+    "static/media/foodphoto1.jpg": "/Facebookish-App/static/media/foodphoto1.4960b2a3466be5caad16.jpg",
+    "static/media/friend8.jpg": "/Facebookish-App/static/media/friend8.3987130398f9c71dbf92.jpg",
+    "static/media/post4.jpg": "/Facebookish-App/static/media/post4.1075b6d009f6c7dc69b7.jpg",
+    "static/media/post1.jpg": "/Facebookish-App/static/media/post1.66496b01596032c51b1f.jpg",
+    "static/media/post3.jpg": "/Facebookish-App/static/media/post3.c01cd7dbfceabfa5e06a.jpg",
+    "static/media/person2.jpg": "/Facebookish-App/static/media/person2.708691c406614505b8bc.jpg",
+    "static/media/post2.jpg": "/Facebookish-App/static/media/post2.460ecc38dfc8ab80387d.jpg",
+    "static/media/friend1.jpg": "/Facebookish-App/static/media/friend1.02e1da87420b3a4dc7a4.jpg",
+    "static/media/friend6.jpg": "/Facebookish-App/static/media/friend6.b4a6514a7fab3ec2f35b.jpg",
+    "static/media/friend7.jpg": "/Facebookish-App/static/media/friend7.ed1c9798ed6fe1fbaee6.jpg",
+    "static/media/friend4.jpg": "/Facebookish-App/static/media/friend4.85bdbc64bcfaf7becd80.jpg",
+    "static/media/friend3.jpg": "/Facebookish-App/static/media/friend3.d886a70cc5195664ab32.jpg",
+    "static/media/friend5.jpg": "/Facebookish-App/static/media/friend5.74a0d69c77593aa86ba3.jpg",
+    "static/media/friend2.jpg": "/Facebookish-App/static/media/friend2.86418473c9f1612a01f8.jpg",
+    "index.html": "/Facebookish-App/index.html",
+    "main.f698ed19.js.map": "/Facebookish-App/static/js/main.f698ed19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.f698ed19.js"
+  ]
+}
