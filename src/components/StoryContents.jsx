@@ -16,28 +16,49 @@ import VideoCallIcon from "@mui/icons-material/VideoCall";
 
 const itemData = [
   {
+    key: "1",
     img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    avatarImg: require("../assets/friend2.jpg"),
     title: "Breakfast",
+    name: "Mia",
   },
   {
+    key: "2",
     img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
+    avatarImg: require("../assets/friend1.jpg"),
+
     title: "Burger",
+    name: "Ryan",
   },
   {
+    key: "3",
     img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
+    avatarImg: require("../assets/friend3.jpg"),
+
     title: "Camera",
+    name: "Summer",
   },
   {
+    key: "4",
     img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
+    avatarImg: require("../assets/friend7.jpg"),
+
     title: "Coffee",
+    name: "Seth",
   },
   {
+    key: "5",
     img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
+    avatarImg: require("../assets/friend4.jpg"),
     title: "Hats",
+    name: "Marissa",
   },
   {
+    key: "6",
     img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
     title: "Honey",
+    avatarImg: require("../assets/person2.jpg"),
+    name: "Sophie",
   },
 ];
 
@@ -132,13 +153,13 @@ function StoryContents() {
               <ImageListItem key={item.img} sx={{ position: "relative" }}>
                 <Avatar
                   alt="Remy Sharp"
-                  src="/static/images/avatar/1.jpg"
+                  src={item.avatarImg}
                   sx={{ width: 24, height: 24, position: "absolute" }}
                 />
                 <Typography
                   sx={{ color: "white", position: "absolute", bottom: "5%" }}
                 >
-                  Name
+                  {item.name}
                 </Typography>
                 <img
                   src={`${item.img}?w=164&h=164&fit=crop&auto=format`}

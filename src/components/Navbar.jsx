@@ -14,7 +14,7 @@ import {
 import FacebookIcon from "@mui/icons-material/Facebook";
 import SearchIcon from "@mui/icons-material/Search";
 import { Mail, Notifications } from "@mui/icons-material";
-import Person1 from "../assets/person2.jpg";
+import SlideBar from "./SlideBar";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -50,19 +50,25 @@ const UserBox = styled(Box)(({ theme }) => ({
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <AppBar position="sticky">
+    <AppBar sx={{ bgcolor: "background.default" }} position="sticky">
       <StyledToolbar>
         <Typography
           variant="h6"
           sx={{
             display: { xs: "none", sm: "block" },
             fontWeight: "bold",
-            fontSize: "1.5rem",
+            fontSize: "1.8rem",
+            color: "#1877F2",
           }}
         >
-          faceapp
+          facenotes
         </Typography>
-        <FacebookIcon sx={{ display: { xs: "block", sm: "none" } }} />
+        <Box sx={{ color: "#1877f2", display: { xs: "block", sm: "none" } }}>
+          <SlideBar />
+        </Box>
+        <FacebookIcon
+          sx={{ color: "#1877f2", display: { xs: "block", sm: "none" } }}
+        />
         <Search
           sx={{
             bgcolor: "#e6e8ea",
@@ -78,20 +84,23 @@ const Navbar = () => {
         </Search>
         <Icons>
           <Badge badgeContent={4} color="error">
-            <Mail />
+            <Mail sx={{ color: "#1877F2" }} />
           </Badge>
           <Badge badgeContent={2} color="error">
-            <Notifications />
+            <Notifications sx={{ color: "#1877F2" }} />
           </Badge>
           <Avatar
             sx={{ width: 30, height: 30 }}
-            src={Person1}
+            src={require("../assets/friend8.jpg")}
             onClick={(e) => setOpen(true)}
           />
         </Icons>
         <UserBox onClick={(e) => setOpen(true)}>
-          <Avatar sx={{ width: 30, height: 30 }} src={Person1} />
-          <Typography variant="span">Mia</Typography>
+          <Avatar
+            sx={{ width: 30, height: 30 }}
+            src={require("../assets/friend8.jpg")}
+          />
+          <Typography variant="span">Masa</Typography>
         </UserBox>
       </StyledToolbar>
       <Menu

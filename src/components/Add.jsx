@@ -25,6 +25,7 @@ const StyledModal = styled(Modal)({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  color: "#1877F2",
 });
 
 const UserBox = styled(Box)({
@@ -70,11 +71,11 @@ const Add = () => {
           </Typography>
           <UserBox>
             <Avatar
-              src={require("../assets/person2.jpg")}
+              src={require("../assets/friend8.jpg")}
               sx={{ width: 30, height: 30 }}
             />
             <Typography fontWeight={500} variant="span">
-              Mia
+              Masaki
             </Typography>
           </UserBox>
           <TextField
