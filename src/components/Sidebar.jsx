@@ -6,21 +6,19 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  Switch,
 } from "@mui/material";
 import {
   AccountBox,
   Article,
   Group,
   Home,
-  ModeNight,
   Person,
   Settings,
   Storefront,
 } from "@mui/icons-material";
 
 // passing props from App theme mode
-function Sidebar({ mode, setMode }) {
+function Sidebar() {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">
@@ -79,17 +77,6 @@ function Sidebar({ mode, setMode }) {
                 <AccountBox sx={{ color: "#1877F2" }} />
               </ListItemIcon>
               <ListItemText primary="Profile" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding sx={{ py: 1 }}>
-            <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
-                <ModeNight sx={{ color: "#1877F2" }} />
-              </ListItemIcon>
-              <Switch
-                // if it's light it's gonna be dark, if not it will be light
-                onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
-              />
             </ListItemButton>
           </ListItem>
         </List>

@@ -19,9 +19,9 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Box bgcolor={"background.default"} color={"text.primary"}>
-        <Navbar />
+        <Navbar setMode={setMode} mode={mode} />
         <Stack direction="row" spacing={2} justifyContent="space-between">
-          <Sidebar setMode={setMode} mode={mode} />
+          <Sidebar />
           <Feed />
           <Rightbar />
         </Stack>

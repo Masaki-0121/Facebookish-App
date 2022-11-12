@@ -5,13 +5,14 @@ import {
   Badge,
   Box,
   InputBase,
+  ListItemButton,
   Menu,
   MenuItem,
   styled,
+  Switch,
   Toolbar,
   Typography,
 } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import SearchIcon from "@mui/icons-material/Search";
 import { Mail, Notifications } from "@mui/icons-material";
 import SlideBar from "./SlideBar";
@@ -47,8 +48,9 @@ const UserBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-const Navbar = () => {
+const Navbar = ({ mode, setMode }) => {
   const [open, setOpen] = useState(false);
+
   return (
     <AppBar sx={{ bgcolor: "background.default" }} position="sticky">
       <StyledToolbar>
@@ -66,9 +68,12 @@ const Navbar = () => {
         <Box sx={{ color: "#1877f2", display: { xs: "block", sm: "none" } }}>
           <SlideBar />
         </Box>
-        <FacebookIcon
-          sx={{ color: "#1877f2", display: { xs: "block", sm: "none" } }}
-        />
+
+        <ListItemButton component="a" href="#simple-list">
+          <Switch
+            onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+          />
+        </ListItemButton>
         <Search
           sx={{
             bgcolor: "#e6e8ea",

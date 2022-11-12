@@ -13,12 +13,10 @@ import {
   Article,
   Group,
   Home,
-  ModeNight,
   Person,
   Settings,
   Storefront,
 } from "@mui/icons-material";
-import { Switch } from "@mui/material";
 
 export default function SlideBar({ mode, setMode }) {
   const [state, setState] = React.useState({
@@ -44,7 +42,7 @@ export default function SlideBar({ mode, setMode }) {
     <Box
       sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
+      onClick={toggleDrawer(anchor, true)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
@@ -102,17 +100,6 @@ export default function SlideBar({ mode, setMode }) {
               <AccountBox sx={{ color: "#1877f2" }} />
             </ListItemIcon>
             <ListItemText primary="Profile" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding sx={{ py: 1 }}>
-          <ListItemButton component="a" href="#simple-list">
-            <ListItemIcon>
-              <ModeNight sx={{ color: "#1877f2" }} />
-            </ListItemIcon>
-            <Switch
-              // if it's light it's gonna be dark, if not it will be light
-              onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
-            />
           </ListItemButton>
         </ListItem>
       </List>
