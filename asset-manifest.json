@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Facebookish-App/static/css/main.31d6cfe0.css",
-    "main.js": "/Facebookish-App/static/js/main.3953f0cd.js",
+    "main.js": "/Facebookish-App/static/js/main.a6da43ba.js",
     "static/media/post5.jpg": "/Facebookish-App/static/media/post5.031fc4229f4956145a29.jpg",
     "static/media/foodphoto1.jpg": "/Facebookish-App/static/media/foodphoto1.4960b2a3466be5caad16.jpg",
     "static/media/friend8.jpg": "/Facebookish-App/static/media/friend8.3987130398f9c71dbf92.jpg",
@@ -18,10 +18,10 @@
     "static/media/friend5.jpg": "/Facebookish-App/static/media/friend5.74a0d69c77593aa86ba3.jpg",
     "static/media/friend2.jpg": "/Facebookish-App/static/media/friend2.86418473c9f1612a01f8.jpg",
     "index.html": "/Facebookish-App/index.html",
-    "main.3953f0cd.js.map": "/Facebookish-App/static/js/main.3953f0cd.js.map"
+    "main.a6da43ba.js.map": "/Facebookish-App/static/js/main.a6da43ba.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.3953f0cd.js"
+    "static/js/main.a6da43ba.js"
   ]
 }
