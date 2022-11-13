@@ -5,7 +5,6 @@ import {
   Badge,
   Box,
   InputBase,
-  ListItemButton,
   Menu,
   MenuItem,
   styled,
@@ -65,23 +64,25 @@ const Navbar = ({ mode, setMode }) => {
         >
           facenotes
         </Typography>
+
         <Box sx={{ color: "#1877f2", display: { xs: "block", sm: "none" } }}>
           <SlideBar />
         </Box>
 
-        <ListItemButton component="a" href="#simple-list">
-          <Switch
-            onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
-          />
-        </ListItemButton>
+        <Switch
+          onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+          sx={{ mr: { xs: "0px", sm: "200px" } }}
+        />
+
         <Search
           sx={{
             bgcolor: "#e6e8ea",
             height: "30px",
+            mr: { xs: "30px", sm: "300px" },
           }}
         >
           <InputBase
-            placeholder="Search FaceApp user..."
+            placeholder="Search Facenotes user..."
             startAdornment={
               <SearchIcon sx={{ color: "gray", position: "start" }} />
             }
@@ -105,7 +106,6 @@ const Navbar = ({ mode, setMode }) => {
             sx={{ width: 30, height: 30 }}
             src={require("../assets/friend8.jpg")}
           />
-          <Typography variant="span">Masa</Typography>
         </UserBox>
       </StyledToolbar>
       <Menu
